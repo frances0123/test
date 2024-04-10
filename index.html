@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #49c581;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://www.animeclick.it/immagini/anime/Chiikawa/gallery_original/Chiikawa-628204489ab83.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://www.animeclick.it/immagini/anime/Chiikawa/gallery_original/Chiikawa-62820447da58a.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://img1.baidu.com/it/u=1698850270,3937324238&fm=253&fmt=auto&app=120&f=JPEG?w=799&h=500");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-blue w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> CHARACTER</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> VIDEOS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-light-green w3-xlarge w3-wide w3-animate-opacity">WHAT <span class="w3-hide-small">IS</span> CHIIKAWA</span>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">CHARACTERS</h3>
+  <p class="w3-center"><em>Chiikawa, Hachiware and Usagi</em></p>
+  <p>"Chiikawa" is an abbreviation of "some kind of small and cute creature" (nanka chiisakute kawaii yatsu) in Japanese.
+    It is a story about small and cute characters with eccentric personalities who live in a fun yet dismal world.
+    Chiikawa is created by the illustrator Nagano and uploaded as a webcomic to Twitter, published as a manga, and adapted into an anime.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Best friends</b></p><br>
+      <img src="https://th.bing.com/th/id/OIP.GcpUB3UxsaArPwX00cYZmQHaEK?rs=1&pid=ImgDetMain" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>CHIIKAWA: It is a bit of a cry baby, but it is kind.
+        It makes a living weeding and hunting.<br>
+        HACHIWARE: Chiikawa's friend. It is cheerful and positive.
+        It lives in a cave.<br>
+        USAGI: Chiikawa's friend.
+        It often loudly scream things like "ura" and "yaha".<br>
+        MOMONGA: It is always acting cutely.
+        It asks for all sorts of things.<br>
+        KURIMANJU: It looks cute, but...?
+        It is a gourmet who is very caring.<br>
+        RAKKO: It is strong and skilled at battle.
+        Chiikawa and their friends admire it.
+
+      </p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">The weeding level:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>HACHIWARE</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-light-green w3-center" style="width:20%">LEVEL5</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>CHIIKAWA</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-light-green w3-center" style="width:0%">LEVEL0</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>USAGI</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-light-green w3-center" style="width:60%">LEVEL3</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-light-green w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5</span><br>
+    Manga
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">136</span><br>
+    Anime
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">2</span><br>
+    DVD
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Twitter</span><br>
+    Platform
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">VIDEOS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">RECOMMANDED VIDEOS</h3>
+  <p class="w3-center"><em>Here are some of my favorite videos.<br> Click on the images to enjoy them!</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+        <a href="https://www.bilibili.com/video/BV1Rg4y1x7su/?spm_id_from=333.337.search-card.all.click">
+      <img src="https://chiikawainfo.carrd.co/assets/images/image03.png?v=1a710e76" style="width:50%" class="w3-hover-opacity" alt="The mist over the mountains"></a>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="https://www.bilibili.com/video/BV1bQ4y177Ep/?spm_id_from=333.337.search-card.all.click">
+      <img src="https://chiikawainfo.carrd.co/assets/images/image04.png?v=1a710e76" style="width:50%"  class="w3-hover-opacity" alt="Coffee beans"></a>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="https://www.youtube.com/watch?v=qVrhs_aeUq4">
+      <img src="https://chiikawainfo.carrd.co/assets/images/image05.png?v=1a710e76" style="width:50%" class="w3-hover-opacity" alt="Bear closeup"></a>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="https://www.bilibili.com/video/BV1nm4y137ZB/?spm_id_from=333.337.search-card.all.click">
+      <img src="https://chiikawainfo.carrd.co/assets/images/image06.png?v=1a710e76" style="width:50%" class="w3-hover-opacity" alt="Quiet ocean"></a>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+        <a href="https://www.youtube.com/watch?v=pbQQAwSQUX4">
+      <img src="https://chiikawainfo.carrd.co/assets/images/image07.png?v=1a710e76" style="width:50%"  class="w3-hover-opacity" alt="The mist"></a>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="https://www.bilibili.com/video/BV1rg4y1f79S/?spm_id_from=333.337.search-card.all.click">
+      <img src="https://chiikawainfo.carrd.co/assets/images/image09.png?v=1a710e76" style="width:60%"  class="w3-hover-opacity" alt="My beloved typewriter"></a>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="https://www.bilibili.com/video/BV1iP411z7yd/?spm_id_from=333.337.search-card.all.click">
+      <img src="https://chiikawainfo.carrd.co/assets/images/image10.png?v=1a710e76" style="width: 60%" class="w3-hover-opacity" alt="Empty ghost train"></a>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="https://www.bilibili.com/video/BV1RN4y127ky/?spm_id_from=333.788.recommend_more_video.0">
+      <img src="https://chiikawainfo.carrd.co/assets/images/image02.png?v=1a710e76" style="width:60%" class="w3-hover-opacity" alt="Sailing"></a>
+    </div>
+    <a href="https://www.anime-chiikawa.jp/">
+    <button class="w3-button w3-padding-large w3-light-green" style="margin-top:64px">LEARN MORE</button></a>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE CAN YOU FIND CHIIKAWA </h3>
+  <p class="w3-center"><em>Enjoy the time with CHIIKAWA!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="https://img0.baidu.com/it/u=3144260655,706814206&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> CVA, HKBU<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Student Number: 23453125<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: 23453125@life.hkbu.edu.hk<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <a href="https://www.bilibili.com/video/BV1dK4y117m9/?spm_id_from=333.337.search-card.all.click">
+        <button class="w3-button w3-light-green w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button></a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-green w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
